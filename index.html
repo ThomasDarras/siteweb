@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="title-spin">Museum Toulouse Samedi ?</h1>
+        <img src="images/carte.png" alt="carte" class="img-carte" />
+        
+        <div class="buttons-container">
+            <button class="btn btn-oui" onclick="window.location.href='oui.html'">Oui</button>
+            <button class="btn btn-oui" onclick="window.location.href='oui.html'">Evidemment</button>
+            <button class="btn btn-oui" onclick="window.location.href='oui.html'">For sure 😎</button>
+        </div>
+            <div class="buttons-container">
+            <button class="btn btn-oui" onclick="window.location.href='ouimaisdate.html'">Ok mais un autre jour</button>
+            <button class="btn btn-oui" onclick="window.location.href='ouimaisactivite.html'">Ok mais un autre endroit</button>
+        </div>
+        <div class="buttons-container">
+            <button class="btn btn-non" onclick="window.location.href='non.html'" id="btn-non">Non</button>
+        </div>
+
+    </header>
+
+    <script>
+        const btnNon = document.getElementById('btn-non');
+        
+        btnNon.addEventListener('mouseover', function() {
+            const randomX = (Math.random() * 200 - 100)*2;
+            const randomY = (Math.random() * 200 - 100)*2;
+            btnNon.style.transform = `translate(${randomX}px, ${randomY}px)`;
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap);
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ffb6d9, #ffc0e3);
+    color: white;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 20px 20px;
+}
+
+header h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes spin360 {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+.title-spin {
+    animation: spin360 1s ease-in-out;
+}
+
+.content {
+    margin: 5px 40px 40px 40px;
+    padding: 40px;
+    text-align: center;
+}
+
+.content p {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.img-carte {
+    max-width: 100%;
+    height: auto;
+    width: 500px;
+    border-radius: 15px;
+}
+
+.gif-container {
+    margin: 18px auto;
+    text-align: center;
+}
+
+.gif-image {
+    width: 360px;
+    max-width: 90%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.18);
+}
+
+.gif-image-oui {
+    width: 150px;
+    max-width: 90%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.18);
+}
+
+.buttons-container {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn-oui {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.btn-oui:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.btn-back {
+    background-color: #ffffff;
+    color: #222;
+    border: 2px solid rgba(0,0,0,0.08);
+}
+
+.btn-back:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.btn-non {
+    background-color: #ff6b6b;
+    color: white;
+    position: relative;
+}
